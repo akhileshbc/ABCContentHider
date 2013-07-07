@@ -9,9 +9,11 @@ Demo is also attached. It has been styled to mimic just like in Facebook. :)
 Usage:
 ------
 
-Include the plugin to your html page:
+Include the plugin to your html page along with the jQuery library(if you have not already included it):
 ```html
-  <script src="js/abc_contenthider.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> <!-- jQuery Library -->
+  
+  <script src="js/abc_contenthider.js"></script> <!-- ABCContentHider Plugin File -->
 ```  
 Then, to apply the plugin, simply call abcContentHider() to the element.
 Eg:
