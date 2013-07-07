@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="js/abc_contenthider.js"></script>
+	<script>
+		
+		
+		$(document).ready(function(){ 
+			
+			$('.content').abcContentHider();	// apply the plugin to all those elements with the class named "content"
+			
+			
+			/*									// this one is with user supplied settings. The values you see below are the default values.
+			$('.content').abcContentHider({
+					'cutoff_length'         : 10,			// when should the content be stripped down, ie. here, it would strip the content when it reaches 10 character. The rest would be hidden
+					'showbtn_display'		: 'inline',		// inline | block = inline would show the button in the same line which the text ends, but block would show it in the next line all the time
+					'showbtn_text'			: 'See More',	// what text should be displayed on the button. eg: "See More"
+					'use_fbstyle'			: true			// if TRUE, the CSS styles for FB like looks would be applied
+			});
+			*/
+
+		});
+	</script>
+	
+	<style>
+		
+		
+	</style>
+</head>
+<body>
+	<div style="width: 500px; margin: 10px auto;">
+		<div style="width:424px;">
+			<img src="abc_fan_page.jpg" style="border: 1px solid #ccc;" />
+			<p class="content">This is a big text and I'm going to hide certain portion of the content and then injects a link which upon clicked would reveal the rest of the contents!</p>
+			<p class="content">Again a big text! Looks better isn't it ? If you like this, please like my page too. Because I would be releasing more freebies and apps. So keep updated via my Facebook page.</p>
+		</div>
+		
+	</div>
+</body>
+</html>
